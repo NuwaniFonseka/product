@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "product-backend/index.js",
+        "src": "product-frontend/src/app.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "product-backend/index.js",
+        "dest": "product-frontend/src/app.js",
         "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
         "headers": {
           "Access-Control-Allow-Origin": "*",
